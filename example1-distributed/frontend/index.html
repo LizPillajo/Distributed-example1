@@ -1,34 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Rick and Morty App</title>
-</head>
-<body>
-
-  <h1>Personajes de Rick and Morty</h1>
-  <button onclick="cargarPersonajes()">Cargar personajes</button>
-
-  <div id="contenedor"></div>
-
-  <script>
-    async function cargarPersonajes() {
-      const res = await fetch("http://localhost:3000/characters");
-      const data = await res.json();
-
-      const contenedor = document.getElementById("contenedor");
-      contenedor.innerHTML = "";
-
-      data.results.forEach(personaje => {
-        const div = document.createElement("div");
-        div.innerHTML = `
-          <h3>${personaje.name}</h3>
-          <img src="${personaje.image}" width="150"/>
-        `;
-        contenedor.appendChild(div);
-      });
-    }
-  </script>
-
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
