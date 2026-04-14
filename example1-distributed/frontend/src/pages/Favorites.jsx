@@ -18,8 +18,8 @@ export const Favorites = () => {
       
       <Grid container spacing={3}>
         {favorites?.map(fav => (
-          <Grid size={4} key={fav.id}>
-            <Card sx={{ width: 280, margin: 2, borderRadius: 2, boxShadow: 3 }}>
+          <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={fav.id}>
+            <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', borderRadius: 2, boxShadow: 3 }}>
               <CardMedia component="img" height="250" image={fav.image} alt={fav.name} />
               <CardContent>
                 <Typography variant="h6" align="center" fontWeight="bold">

@@ -17,7 +17,7 @@ public class CharacterController {
     }
 
     // Endpoint: GET /api/characters/external (Fetches data from Rick & Morty)
-    @GetMapping("/external") 
+    @GetMapping(value = "/external", produces = "application/json")
     public String getExternalCharacters() { 
         return service.getAllCharacters();
     }

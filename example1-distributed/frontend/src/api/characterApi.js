@@ -7,7 +7,7 @@ const api = axios.create({
 // 1. Get External Characters 
 export const getExternalCharacters = async () => {
   const response = await api.get('/external');
-  const data = JSON.parse(response.data);
+  const data = typeof response.data === 'string' ? JSON.parse(response.data) : response.data;
   return data.results;
 };
 
