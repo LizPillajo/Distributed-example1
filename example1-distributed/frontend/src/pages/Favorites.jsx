@@ -13,7 +13,7 @@ export const Favorites = () => {
   return (
     <Box sx={{ padding: 4 }}>
       <Typography variant="h3" gutterBottom fontWeight="bold" color="#efb034">
-        My Favorites (PostgreSQL)
+        My Favorites (PostgreSQL) Now!
       </Typography>
       
       <Grid container spacing={3}>
