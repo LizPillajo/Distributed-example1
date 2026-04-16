@@ -26,7 +26,7 @@ export const CharacterCard = ({ character, onSave }) => {
           }}
           onClick={() => onSave(character)}
         >
-          Save Favorite
+          Save Favorite Character
         </Button>
       </CardContent>
     </Card>
