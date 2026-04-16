@@ -40,7 +40,7 @@ export const Home = () => {
   return (
     <Box sx={{ padding: 4 }}>
       <Typography variant="h3" gutterBottom fontWeight="bold" color="#0d2149">
-        Rick and Morty Universe
+        Rick and Morty Universe! 
       </Typography>
       
       <Grid container spacing={3}>
