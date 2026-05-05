@@ -7,7 +7,7 @@ export const Navbar = () => {
       <Toolbar>
         <Box sx={{ flexGrow: 1, display: 'flex', gap: 2 }}>
           <Button sx={{ color: '#efb034' }} component={Link} to="/">Home</Button>
-          <Button sx={{ color: '#efb034' }} component={Link} to="/favorites">My Favorites Characterss</Button>
+          <Button sx={{ color: '#efb034' }} component={Link} to="/favorites">My Favorites Characters</Button>
         </Box>
       </Toolbar>
     </AppBar>
