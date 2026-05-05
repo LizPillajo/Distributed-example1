@@ -31,7 +31,7 @@ export const Home = () => {
     return (
       <Box sx={{ padding: 4 }}>
         <Alert severity="error" variant="filled" sx={{ backgroundColor: '#0d2149', color: 'white' }}>
-          Error de conexión: {error.message}. ¡Asegúrate de que tu backend esté encendido en Docker!
+          Error de conexión: {error.message}. ¡Make sure your backend is running in Docker !
         </Alert>
       </Box>
     );
@@ -40,7 +40,7 @@ export const Home = () => {
   return (
     <Box sx={{ padding: 4 }}>
       <Typography variant="h3" gutterBottom fontWeight="bold" color="#0d2149">
-        Rick and Morty Universe
+        Rick and Morty Universe! 
       </Typography>
       
       <Grid container spacing={3}>
