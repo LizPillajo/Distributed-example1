@@ -12,7 +12,7 @@ const rootRoute = createRootRoute({
   ),
 });
 
-//Routes 
+//Routes: 
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/',
