@@ -1,7 +1,7 @@
 import axios from 'axios';
  
 const api = axios.create({
-  baseURL: 'http://localhost:8080/api/characters'
+  baseURL: 'http://100.53.169.69:8080/api/characters'
 });
 
 // 1. Get External Characters.
