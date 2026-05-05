@@ -13,7 +13,8 @@ services:
 
   # 2. API
   backend:
-    build: ./backend
+    #build: ./backend
+    image: lizdaisy/example-back:qa
     ports:
       - "8080:8080"
     depends_on:
@@ -27,7 +28,8 @@ services:
 
   # 3. UI
   frontend:
-    build: ./frontend
+    #build: ./frontend
+    image: lizdaisy/example-front:qa
     ports:
       - "5173:5173"
     depends_on:
