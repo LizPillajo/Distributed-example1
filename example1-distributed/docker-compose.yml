@@ -13,7 +13,8 @@ services:
 
   # 2. API
   backend:
-    build: ./backend
+    #build: ./backend
+    image: lizdaisy/example-back:dev
     ports:
       - "8080:8080"
     depends_on:
@@ -27,8 +28,11 @@ services:
 
   # 3. UI
   frontend:
-    build: ./frontend
+    #build: ./frontend
+    image: lizdaisy/example-front:dev
     ports:
       - "5173:5173"
     depends_on:
       - backend
+    environment:                  
+      - VITE_API_URL=http://98.83.186.129:8080/api/characters
