@@ -4,7 +4,7 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8080/api/characters'
 });
 
-// 1. Get External Characters 
+// 1. Get External Characters.
 export const getExternalCharacters = async () => {
   const response = await api.get('/external');
   const data = typeof response.data === 'string' ? JSON.parse(response.data) : response.data;
