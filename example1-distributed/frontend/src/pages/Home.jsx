@@ -15,7 +15,7 @@ export const Home = () => {
       await saveFavorite(character);
       alert('¡Personaje guardado en PostgreSQL!');
     } catch (error) {
-      alert('Hubo un error al guardar');
+      alert('An error occurred while saving');
     }
   };
 
