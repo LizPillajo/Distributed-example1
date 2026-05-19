@@ -31,7 +31,7 @@ export const Home = () => {
     return (
       <Box sx={{ padding: 4 }}>
         <Alert severity="error" variant="filled" sx={{ backgroundColor: '#0d2149', color: 'white' }}>
-          Error de conexión: {error.message}. ¡Make sure your backend is running in Docker !
+          Connection error: {error.message}. ¡Make sure your backend is running in Docker !
         </Alert>
       </Box>
     );
